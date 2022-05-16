@@ -16,3 +16,14 @@ it("5th of Jan, 2030. Expecting no data", async () => {
   const expected = {};
   expect(await getStockInfo(dateObject)).toStrictEqual(expected);
 });
+
+it("12th of March, 2002. Expecting - open: 3603.16, high: 3603.16, low: 3522.91, close: 3535.8", async () => {
+  const dateObject = new Date("2002-03-12");
+  const expected = {
+    open: 3603.16,
+    high: 3603.16,
+    low: 3522.91,
+    close: 3535.8,
+  };
+  expect(await getStockInfo(dateObject)).toStrictEqual(expected);
+});
