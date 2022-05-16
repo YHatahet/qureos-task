@@ -1,0 +1,22 @@
+{
+  "name": "qureos-task",
+  "version": "1.0.0",
+  "description": "start of task 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YHatahet/qureos-task.git"
+  },
+  "author": "Yamen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YHatahet/qureos-task/issues"
+  },
+  "homepage": "https://github.com/YHatahet/qureos-task#readme",
+  "dependencies": {
+    "typescript": "^4.6.4"
+  }
+}
