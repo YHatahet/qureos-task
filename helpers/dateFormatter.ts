@@ -14,11 +14,15 @@ const MonthMap: string[] = [
 ];
 
 function dateFormatter(date: Date): string {
-  const day = date.getDate();
-  const month = MonthMap[date.getMonth()];
-  const year = date.getFullYear();
-  const formattedDate = `${day}-${month}-${year}`;
-  return formattedDate;
+  try {
+    const day = date.getDate();
+    const month = MonthMap[date.getMonth()];
+    const year = date.getFullYear();
+    const formattedDate = `${day}-${month}-${year}`;
+    return formattedDate;
+  } catch (error) {
+    throw new Error(`dateFormatter + ${error}`);
+  }
 }
 
 export default dateFormatter;
