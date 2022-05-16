@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/YHatahet/qureos-task#readme",
   "dependencies": {
+    "@types/es6-promise": "^3.3.0",
     "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.35"
   }
 }
